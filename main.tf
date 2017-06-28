@@ -7,6 +7,6 @@ module "label" {
 }
 
 resource "aws_elastic_beanstalk_application" "default" {
-  name        = "${module.label.value}"
+  name        = "${module.label.id}"
   description = "${var.description}"
 }
