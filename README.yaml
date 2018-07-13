@@ -1,0 +1,49 @@
+---
+#
+# This is the canonical configuration for the `README.md`
+# Run `make readme` to rebuild the `README.md`
+#
+
+# Name of this project
+name: terraform-aws-elastic-beanstalk-application
+
+# Logo for this project
+#logo: docs/logo.png
+
+# License of this project
+license: "APACHE2"
+
+# Canonical GitHub repo
+github_repo: cloudposse/terraform-aws-elastic-beanstalk-application
+
+# Badges to display
+badges:
+  - name: "Build Status"
+    image: "https://travis-ci.org/cloudposse/terraform-aws-elastic-beanstalk-application.svg?branch=master"
+    url: "https://travis-ci.org/cloudposse/terraform-aws-elastic-beanstalk-application"
+  - name: "Latest Release"
+    image: "https://img.shields.io/github/release/cloudposse/terraform-aws-elastic-beanstalk-application.svg"
+    url: "https://github.com/cloudposse/terraform-aws-elastic-beanstalk-application/releases/latest"
+  - name: "Slack Community"
+    image: "https://slack.cloudposse.com/badge.svg"
+    url: "https://slack.cloudposse.com"
+
+related:
+  - name: "terraform-aws-elastic-beanstalk-environment"
+    description: "Terraform module to provision an AWS Elastic Beanstalk Environment"
+    url: "https://github.com/cloudposse/terraform-aws-elastic-beanstalk-environment"
+
+# Short description of this project
+description: |-
+  Terraform module to provision AWS Elastic Beanstalk application
+
+include:
+  - "docs/targets.md"
+  - "docs/terraform.md"
+
+# Contributors to this project
+contributors:
+  - name: "Igor Rodionov"
+    github: "goruha"
+  - name: "Andriy Knysh"
+    github: "aknysh"
