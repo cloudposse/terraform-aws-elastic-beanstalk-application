@@ -70,6 +70,14 @@ Check out these related projects.
 
 
 
+
+## References
+
+For additional context, refer to some of these links. 
+
+- [terraform-aws-jenkins](https://github.com/cloudposse/terraform-aws-jenkins) - An example implementation. Terraform module to build a Docker image with Jenkins.
+
+
 ## Help
 
 **Got a question?**

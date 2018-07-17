@@ -32,6 +32,11 @@ related:
   - name: "terraform-aws-elastic-beanstalk-environment"
     description: "Terraform module to provision an AWS Elastic Beanstalk Environment"
     url: "https://github.com/cloudposse/terraform-aws-elastic-beanstalk-environment"
+  
+references:
+  - name: "terraform-aws-jenkins"
+    description: "An example implementation. Terraform module to build a Docker image with Jenkins."
+    url: "https://github.com/cloudposse/terraform-aws-jenkins"
 
 # Short description of this project
 description: |-
