@@ -50,12 +50,6 @@ related:
   - name: "terraform-aws-vpc-peering"
     description: "Terraform module to create a peering connection between two VPCs"
     url: "https://github.com/cloudposse/terraform-aws-vpc-peering"
-  - name: "terraform-aws-kops-vpc-peering"
-    description: "Terraform module to create a peering connection between a backing services VPC and a VPC created by Kops"
-    url: "https://github.com/cloudposse/terraform-aws-kops-vpc-peering"
-  - name: "terraform-aws-kops-metadata"
-    description: "Terraform module to lookup resources within a Kops cluster for easier integration with Terraform"
-    url: "https://github.com/cloudposse/terraform-aws-kops-metadata"
 
   
 references:
