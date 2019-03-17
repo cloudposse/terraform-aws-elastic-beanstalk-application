@@ -70,6 +70,9 @@ Available targets:
 | namespace | Namespace (e.g. `cp` or `cloudposse`) | string | - | yes |
 | stage | Stage (e.g. `prod`, `dev`, `staging`) | string | - | yes |
 | tags | Additional tags (e.g. `map('BusinessUnit','XYZ')`) | map | `<map>` | no |
+| appversion_lifecycle_service_role_arn | The service role ARN to use for application version cleanup | string | - | yes |
+| appversion_lifecycle_max_count | The max number of application versions to keep | string | `1000` | no |
+| appversion_lifecycle_delete_source_from_s3 | Delete application versions from S3 source | string | `false` | no |
 
 ## Outputs
 
