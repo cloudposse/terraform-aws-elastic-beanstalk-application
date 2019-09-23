@@ -5,7 +5,7 @@
 
 # terraform-aws-elastic-beanstalk-application
 
- [![Build Status](https://travis-ci.org/cloudposse/terraform-aws-elastic-beanstalk-application.svg?branch=master)](https://travis-ci.org/cloudposse/terraform-aws-elastic-beanstalk-application) [![Latest Release](https://img.shields.io/github/release/cloudposse/terraform-aws-elastic-beanstalk-application.svg)](https://github.com/cloudposse/terraform-aws-elastic-beanstalk-application/releases/latest) [![Slack Community](https://slack.cloudposse.com/badge.svg)](https://slack.cloudposse.com)
+ [![Codefresh Status](https://g.codefresh.io/api/badges/pipeline/cloudposse/terraform-modules%2Fterraform-aws-elastic-beanstalk-application?type=cf-1)](https://g.codefresh.io/public/accounts/cloudposse/pipelines/5d182cb1ac440444a6c0082b) [![Latest Release](https://img.shields.io/github/release/cloudposse/terraform-aws-elastic-beanstalk-application.svg)](https://github.com/cloudposse/terraform-aws-elastic-beanstalk-application/releases/latest) [![Slack Community](https://slack.cloudposse.com/badge.svg)](https://slack.cloudposse.com)
 
 
 Terraform module to provision AWS Elastic Beanstalk application
@@ -58,18 +58,17 @@ Available targets:
   lint                                Lint terraform code
 
 ```
-
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
-| attributes | Additional attributes (e.g. `policy` or `role`) | list | `<list>` | no |
+| attributes | Additional attributes (e.g. `policy` or `role`) | list(string) | `<list>` | no |
 | delimiter | Delimiter to be used between `name`, `namespace`, `stage`, etc. | string | `-` | no |
 | description | Description | string | `` | no |
 | name | The Name of the application or solution  (e.g. `bastion` or `portal`) | string | - | yes |
 | namespace | Namespace (e.g. `cp` or `cloudposse`) | string | - | yes |
 | stage | Stage (e.g. `prod`, `dev`, `staging`) | string | - | yes |
-| tags | Additional tags (e.g. `map('BusinessUnit','XYZ')`) | map | `<map>` | no |
+| tags | Additional tags (e.g. `map('BusinessUnit','XYZ')`) | map(string) | `<map>` | no |
 
 ## Outputs
 
@@ -171,7 +170,7 @@ In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
 
 ## Copyright
 
-Copyright © 2017-2018 [Cloud Posse, LLC](https://cpco.io/copyright)
+Copyright © 2017-2019 [Cloud Posse, LLC](https://cpco.io/copyright)
 
 
 
@@ -230,9 +229,9 @@ Check out [our other projects][github], [follow us on twitter][twitter], [apply 
 |---|---|
 
   [goruha_homepage]: https://github.com/goruha
-  [goruha_avatar]: https://github.com/goruha.png?size=150
+  [goruha_avatar]: https://img.cloudposse.com/150x150/https://github.com/goruha.png
   [aknysh_homepage]: https://github.com/aknysh
-  [aknysh_avatar]: https://github.com/aknysh.png?size=150
+  [aknysh_avatar]: https://img.cloudposse.com/150x150/https://github.com/aknysh.png
 
 
 
