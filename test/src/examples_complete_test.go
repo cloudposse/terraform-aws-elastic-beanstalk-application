@@ -28,7 +28,7 @@ func TestExamplesComplete(t *testing.T) {
 	// Run `terraform output` to get the value of an output variable
 	repositoryName := terraform.Output(t, terraformOptions, "app_name")
 
-	expectedRepositoryName := "eg-test-ecr-test"
+	expectedRepositoryName := "eg-test-elastic-beanstalk-app-test"
 	// Verify we're getting back the outputs we expect
 	assert.Equal(t, expectedRepositoryName, repositoryName)
 }
