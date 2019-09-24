@@ -26,7 +26,7 @@ func TestExamplesComplete(t *testing.T) {
 	terraform.InitAndApply(t, terraformOptions)
 
 	// Run `terraform output` to get the value of an output variable
-	repositoryName := terraform.Output(t, terraformOptions, "repository_name")
+	repositoryName := terraform.Output(t, terraformOptions, "app_name")
 
 	expectedRepositoryName := "eg-test-ecr-test"
 	// Verify we're getting back the outputs we expect
