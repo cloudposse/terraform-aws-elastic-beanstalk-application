@@ -5,7 +5,7 @@
 
 # terraform-aws-elastic-beanstalk-application
 
- [![Codefresh Status](https://g.codefresh.io/api/badges/pipeline/cloudposse/terraform-modules%2Fterraform-aws-elastic-beanstalk-application?type=cf-1)](https://g.codefresh.io/public/accounts/cloudposse/pipelines/5d182cb1ac440444a6c0082b) [![Latest Release](https://img.shields.io/github/release/cloudposse/terraform-aws-elastic-beanstalk-application.svg)](https://github.com/cloudposse/terraform-aws-elastic-beanstalk-application/releases/latest) [![Slack Community](https://slack.cloudposse.com/badge.svg)](https://slack.cloudposse.com)
+ [![Codefresh Status](https://g.codefresh.io/api/badges/pipeline/cloudposse/terraform-modules%2Fterraform-aws-elastic-beanstalk-application?type=cf-1)](https://g.codefresh.io/public/accounts/cloudposse/pipelines/5d88ca3e31f6cfe6ae6bb98e) [![Latest Release](https://img.shields.io/github/release/cloudposse/terraform-aws-elastic-beanstalk-application.svg)](https://github.com/cloudposse/terraform-aws-elastic-beanstalk-application/releases/latest) [![Slack Community](https://slack.cloudposse.com/badge.svg)](https://slack.cloudposse.com)
 
 
 Terraform module to provision AWS Elastic Beanstalk application
