@@ -28,5 +28,5 @@ func TestExamplesComplete(t *testing.T) {
 	// Run `terraform output` to get the value of an output variable
 	elasticBeanstalkApplicationName := terraform.Output(t, terraformOptions, "elastic_beanstalk_application_name")
 	// Verify we're getting back the outputs we expect
-	assert.Equal(t, "elastic-beanstalk-app", elasticBeanstalkApplicationName)
+	assert.Equal(t, "eg-test-elastic-beanstalk-app", elasticBeanstalkApplicationName)
 }
