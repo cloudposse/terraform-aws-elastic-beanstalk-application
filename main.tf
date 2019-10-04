@@ -12,7 +12,7 @@ locals {
   // Remove `Name` tag from the map of tags because Elastic Beanstalk generates the `Name` tag automatically
   // and if it is provided, terraform tries to recreate the application on each `plan/apply`
   // https://github.com/terraform-providers/terraform-provider-aws/issues/3963
-  tags = { for t in keys(module.label.tags) : t => module.label.tags[l] if t != "Name" }
+  tags = { for t in keys(module.label.tags) : t => module.label.tags[t] if t != "Name" }
 }
 
 resource "aws_elastic_beanstalk_application" "default" {
