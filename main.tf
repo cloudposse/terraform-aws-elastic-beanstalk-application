@@ -11,4 +11,5 @@ module "label" {
 resource "aws_elastic_beanstalk_application" "default" {
   name        = module.label.id
   description = var.description
+  tags        = module.label.tags
 }
