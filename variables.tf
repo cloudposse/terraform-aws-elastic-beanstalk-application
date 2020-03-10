@@ -1,6 +1,6 @@
-variable "namespace" {
+variable "environment" {
   type        = string
-  description = "Namespace, which could be your organization name, e.g. 'eg' or 'cp'"
+  description = "Environment, in which resource will be deployed, e.g. 'uat' or 'prod' or 'staging'"
   default     = ""
 }
 

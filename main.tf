@@ -1,7 +1,6 @@
 module "label" {
   source     = "git::https://github.com/brighte-capital/terraform-null-label.git?ref=tags/0.15.0"
-  namespace  = var.namespace
-  name       = var.name
+  environment  = var.environment
   stage      = var.stage
   delimiter  = var.delimiter
   attributes = var.attributes
