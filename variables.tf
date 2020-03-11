@@ -38,3 +38,23 @@ variable "description" {
   default     = ""
   description = "Elastic Beanstalk Application description"
 }
+
+variable "application_version_name" {
+  type        = string
+  description = "Application version name"
+}
+
+variable "application_version_description" {
+  type        = string
+  description = "Application version description"
+}
+
+variable "application_version_s3_bucket" {
+  type        = string
+  description = "S3 bucket name"
+}
+
+variable "application_version_s3_bucket_object" {
+  type        = string
+  description = "Oject name in S3 bucket"
+}

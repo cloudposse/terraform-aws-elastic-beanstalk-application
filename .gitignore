@@ -5,6 +5,8 @@
 # Module directory
 .terraform/
 
+*.tfvars
+
 .idea
 *.iml
 

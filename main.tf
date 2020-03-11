@@ -19,5 +19,12 @@ resource "aws_elastic_beanstalk_application" "default" {
   name        = module.label.id
   description = var.description
   tags        = local.tags
+}
 
+resource "aws_elastic_beanstalk_application_version" "application_version" {
+  name        = var.application_version_name
+  application = module.label.id
+  description = var.application_version_description
+  bucket      = var.application_version_s3_bucket
+  key         = var.application_version_s3_bucket_object
 }
