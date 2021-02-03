@@ -1,8 +1,8 @@
 locals {
-  // Remove `Name` tag from the map of tags because Elastic Beanstalk generates the `Name` tag automatically
-  // and if it is provided, terraform tries to recreate the application on each `plan/apply`
-  // `Namespace` should be removed as well since any string that contains `Name` forces recreation
-  // https://github.com/terraform-providers/terraform-provider-aws/issues/3963
+  # Remove `Name` tag from the map of tags because Elastic Beanstalk generates the `Name` tag automatically
+  # and if it is provided, terraform tries to recreate the application on each `plan/apply`
+  # `Namespace` should be removed as well since any string that contains `Name` forces recreation
+  # https://github.com/terraform-providers/terraform-provider-aws/issues/3963
   tags = { for t in keys(module.this.tags) : t => module.this.tags[t] if t != "Name" && t != "Namespace" }
 }
 
