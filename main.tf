@@ -5,6 +5,7 @@ locals {
   # https://github.com/terraform-providers/terraform-provider-aws/issues/3963
   tags = { for t in keys(module.this.tags) : t => module.this.tags[t] if t != "Name" && t != "Namespace" }
 }
+    
 
 resource "aws_elastic_beanstalk_application" "default" {
   name        = module.this.id
