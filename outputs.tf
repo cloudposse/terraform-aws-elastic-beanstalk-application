@@ -1,10 +1,10 @@
 output "elastic_beanstalk_application_name" {
-  value       = aws_elastic_beanstalk_application.default[*].name
+  value       = try(aws_elastic_beanstalk_application.default[0].name, null)
   description = "Elastic Beanstalk Application name"
 }
 
 output "elastic_beanstalk_application_arn" {
-  value       = aws_elastic_beanstalk_application.default[*].arn
+  value       = try(aws_elastic_beanstalk_application.default[0].arn, null)
   description = "Elastic Beanstalk Application Arn"
 }
 
@@ -14,6 +14,6 @@ output "appversion_lifecycle_service_role_arn" {
 }
 
 output "elastic_beanstalk_application_lifecycle_rules" {
-  value       = aws_elastic_beanstalk_application.default[*].appversion_lifecycle
+  value       = try(aws_elastic_beanstalk_application.default[0].appversion_lifecycle, null)
   description = "Elastic Beanstalk Application Lifecycle Rules"
 }
