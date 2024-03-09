@@ -26,12 +26,17 @@ license: "APACHE2"
 github_repo: cloudposse/terraform-aws-elastic-beanstalk-application
 # Badges to display
 badges:
-  - name: "Latest Release"
-    image: "https://img.shields.io/github/release/cloudposse/terraform-aws-elastic-beanstalk-application.svg"
-    url: "https://github.com/cloudposse/terraform-aws-elastic-beanstalk-application/releases/latest"
-  - name: "Slack Community"
-    image: "https://slack.cloudposse.com/badge.svg"
-    url: "https://slack.cloudposse.com"
+  - name: Latest Release
+    image: https://img.shields.io/github/release/cloudposse/terraform-aws-elastic-beanstalk-application.svg?style=for-the-badge
+    url: https://github.com/cloudposse/terraform-aws-elastic-beanstalk-application/releases/latest
+  - name: Last Updated
+    image: https://img.shields.io/github/last-commit/cloudposse/terraform-aws-elastic-beanstalk-application.svg?style=for-the-badge
+    url: https://github.com/cloudposse/terraform-aws-elastic-beanstalk-application/commits
+  - name: Slack Community
+    image: https://slack.cloudposse.com/for-the-badge.svg
+    url: https://slack.cloudposse.com
+
+# List any related terraform modules that this module may be used with or that this module depends on.
 related:
   - name: "terraform-aws-elastic-beanstalk-environment"
     description: "Terraform module to provision an AWS Elastic Beanstalk Environment"
@@ -65,20 +70,4 @@ include:
   - "docs/targets.md"
   - "docs/terraform.md"
 # Contributors to this project
-contributors:
-  - name: "Erik Osterman"
-    homepage: "https://github.com/osterman"
-    avatar: "http://s.gravatar.com/avatar/88c480d4f73b813904e00a5695a454cb?s=144"
-    github: "osterman"
-  - name: "Igor Rodionov"
-    homepage: "https://github.com/goruha/"
-    avatar: "http://s.gravatar.com/avatar/bc70834d32ed4517568a1feb0b9be7e2?s=144"
-    github: "goruha"
-  - name: "Andriy Knysh"
-    homepage: "https://github.com/aknysh/"
-    avatar: "https://avatars0.githubusercontent.com/u/7356997?v=4&u=ed9ce1c9151d552d985bdf5546772e14ef7ab617&s=144"
-    github: "aknysh"
-  - name: "Aleksandar Knezevic"
-    homepage: "https://github.com/aleksandarknezevic"
-    avatar: "https://avatars.githubusercontent.com/u/24812518?v=4"
-    github: "aleksandarknezevic"
+contributors: []
