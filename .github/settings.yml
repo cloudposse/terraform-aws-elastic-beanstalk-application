@@ -3,3 +3,5 @@ _extends: .github
 repository:
   name: terraform-aws-elastic-beanstalk-application
   description: Terraform Module to define an ElasticBeanstalk Application
+  homepage: https://cloudposse.com/accelerate
+  topics: terraform, terraform-modules, elasticbeanstalk, application, aws, hcl2
