@@ -5,3 +5,4 @@ repository:
   description: Terraform Module to define an ElasticBeanstalk Application
   homepage: https://cloudposse.com/accelerate
   topics: terraform, terraform-modules, elasticbeanstalk, application, aws, hcl2
+
