@@ -34,7 +34,7 @@ badges:
     url: https://github.com/cloudposse/terraform-aws-elastic-beanstalk-application/commits
   - name: Slack Community
     image: https://slack.cloudposse.com/for-the-badge.svg
-    url: https://slack.cloudposse.com
+    url: https://cloudposse.com/slack
 
 # List any related terraform modules that this module may be used with or that this module depends on.
 related:
@@ -66,8 +66,5 @@ references:
 # Short description of this project
 description: |-
   Terraform module to provision AWS Elastic Beanstalk application
-include:
-  - "docs/targets.md"
-  - "docs/terraform.md"
-# Contributors to this project
+include: []
 contributors: []
