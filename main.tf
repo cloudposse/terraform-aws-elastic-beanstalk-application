@@ -52,7 +52,7 @@ data "aws_iam_policy_document" "service" {
 resource "aws_iam_role" "default" {
   count = local.enabled && var.create_lifecycle_service_role ? 1 : 0
 
-  name               = "${module.this.id}-eb-service"
+  name               = "${module.this.id}-eb-appversion-lifecycle-service"
   assume_role_policy = join("", data.aws_iam_policy_document.service[*].json)
   tags               = module.this.tags
 }
