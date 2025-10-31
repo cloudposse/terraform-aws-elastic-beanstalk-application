@@ -34,6 +34,12 @@ variable "create_lifecycle_service_role" {
   description = "Whether to create service role for application version cleanup. If set, `appversion_lifecycle_service_role_arn` will be ignored"
 }
 
+variable "appversion_lifecycle_service_role_name_suffix" {
+  type        = string
+  default     = "eb-appversion-lifecycle-service"
+  description = "Suffix to add to the lifecycle service role name."
+}
+
 variable "prefer_legacy_service_policy" {
   type        = bool
   default     = true
