@@ -6,7 +6,7 @@ locals {
   tags                                  = { for t in keys(module.this.tags) : t => module.this.tags[t] if t != "Name" && t != "Namespace" }
   enabled                               = module.this.enabled
   partition                             = join("", data.aws_partition.current[*].partition)
-  appversion_lifecycle_service_role_arn = var.create_lifecycle_service_role ? aws_iam_role.default[0].arn : var.appversion_lifecycle_service_role_arn
+  appversion_lifecycle_service_role_arn = var.create_lifecycle_service_role ? join("", aws_iam_role.default[*].arn) : var.appversion_lifecycle_service_role_arn
   appversion_lifecycle_max_age_in_days  = var.appversion_lifecycle_max_count == 200 ? var.appversion_lifecycle_max_age_in_days : null
   appversion_lifecycle_max_count        = local.appversion_lifecycle_max_age_in_days != null ? null : var.appversion_lifecycle_max_count
 }
