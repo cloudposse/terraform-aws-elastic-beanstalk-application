@@ -33,6 +33,7 @@
 Terraform module to provision AWS Elastic Beanstalk application
 
 
+
 > [!TIP]
 > #### 👽 Use Atmos with Terraform
 > Cloud Posse uses [`atmos`](https://atmos.tools) to easily orchestrate multiple environments using Terraform. <br/>
@@ -53,31 +54,26 @@ Terraform module to provision AWS Elastic Beanstalk application
 
 
 
+
 <!-- markdownlint-disable -->
 ## Requirements
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13.0 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 2.0 |
 | <a name="requirement_null"></a> [null](#requirement\_null) | >= 2.0 |
 
-## Providers
-
-| Name | Version |
-|------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 2.0 |
-
 ## Modules
 
 | Name | Source | Version |
-|------|--------|---------|
+| ---- | ------ | ------- |
 | <a name="module_this"></a> [this](#module\_this) | cloudposse/label/null | 0.25.0 |
 
 ## Resources
 
 | Name | Type |
-|------|------|
+| ---- | ---- |
 | [aws_elastic_beanstalk_application.default](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/elastic_beanstalk_application) | resource |
 | [aws_iam_role.default](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role) | resource |
 | [aws_iam_role_policy_attachment.enhanced_health](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role_policy_attachment) | resource |
@@ -88,7 +84,7 @@ Terraform module to provision AWS Elastic Beanstalk application
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_additional_tag_map"></a> [additional\_tag\_map](#input\_additional\_tag\_map) | Additional key-value pairs to add to each map in `tags_as_list_of_maps`. Not added to `tags` or `id`.<br/>This is for some rare cases where resources want additional configuration of tags<br/>and therefore take a list of maps with tag key, value, and additional configuration. | `map(string)` | `{}` | no |
 | <a name="input_appversion_lifecycle_delete_source_from_s3"></a> [appversion\_lifecycle\_delete\_source\_from\_s3](#input\_appversion\_lifecycle\_delete\_source\_from\_s3) | Whether to delete application versions from S3 source | `bool` | `false` | no |
 | <a name="input_appversion_lifecycle_max_age_in_days"></a> [appversion\_lifecycle\_max\_age\_in\_days](#input\_appversion\_lifecycle\_max\_age\_in\_days) | The number of days to retain an application version | `number` | `null` | no |
@@ -119,7 +115,7 @@ Terraform module to provision AWS Elastic Beanstalk application
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | <a name="output_appversion_lifecycle_service_role_arn"></a> [appversion\_lifecycle\_service\_role\_arn](#output\_appversion\_lifecycle\_service\_role\_arn) | Elastic Beanstalk Application Lifecycle Service Role Arn |
 | <a name="output_elastic_beanstalk_application_arn"></a> [elastic\_beanstalk\_application\_arn](#output\_elastic\_beanstalk\_application\_arn) | Elastic Beanstalk Application Arn |
 | <a name="output_elastic_beanstalk_application_lifecycle_rules"></a> [elastic\_beanstalk\_application\_lifecycle\_rules](#output\_elastic\_beanstalk\_application\_lifecycle\_rules) | Elastic Beanstalk Application Lifecycle Rules |
@@ -191,7 +187,7 @@ For additional context, refer to some of these links.
 > - **Customer Workshops.** Engage with our team in weekly workshops, gaining insights and strategies to continuously improve and innovate.
 >
 > <a href="https://cpco.io/commercial-support?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/terraform-aws-elastic-beanstalk-application&utm_content=commercial_support"><img alt="Request Quote" src="https://img.shields.io/badge/request%20quote-success.svg?style=for-the-badge"/></a>
-> 
+>
 </details>
 
 ## ✨ Contributing
@@ -234,15 +230,15 @@ Setup dependencies:
 
 To run tests:
 
-- Run all tests:  
+- Run all tests:
   ```sh
   atmos test run
   ```
-- Clean up test artifacts:  
+- Clean up test artifacts:
   ```sh
   atmos test clean
   ```
-- Explore additional test options:  
+- Explore additional test options:
   ```sh
   atmos test --help
   ```
