@@ -9,7 +9,7 @@ output "elastic_beanstalk_application_arn" {
 }
 
 output "appversion_lifecycle_service_role_arn" {
-  value       = var.create_lifecycle_service_role ? aws_iam_role.default[0].arn : var.appversion_lifecycle_service_role_arn
+  value       = local.appversion_lifecycle_service_role_arn
   description = "Elastic Beanstalk Application Lifecycle Service Role Arn"
 }
 
